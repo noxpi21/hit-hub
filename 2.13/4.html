@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eje 2.13</title>
+    <style>
+        *{box-sizing: border-box;}
+        .gods{display: flex;justify-content: space-around;height: 2000px;background-color: brown;
+            padding:5%;margin-bottom:5%;}
+        .legends{width: 100px; ;}
+              
+    </style>
+</head>
+<body>
+    <div class="gods">
+        <h1>position static (por defecto)</h1>
+        <div class="legends" style="position:static; top:50px; left:10px; ;">static</div>
+        <div class="legends"></div>
+        <div class="legends"></div>
+    </div>
+    <div class="gods">
+        <h1>position relative</h1>
+        <div class="legends" style="position:relative; top:50px; left:10px; ;">relative</div>
+        <div class="legends"></div>
+        <div class="legends"></div>
+    </div>
+    <div class="gods">
+    <h1>positon absolute</h1>
+    <div class="legends" style="position:absolute; top:2000px;; left:500px;background-color: rgb(174, 0, 255);">absolute</div>
+    <div class="legends"></div>
+    <div class="legends"></div>
+    </div>
+    <div class="gods">
+    <h1>position sticky</h1>
+    <div class="legends"style="position:sticky; top:50px;">sticky</div>
+    <div class="legends"></div>
+    <div class="legends"></div>
+    </div> 
+    <div class="gods">
+    <h1>position fixed</h1>
+    <!-- <div class="legends" style="position:fixed; top:100px; left:300px; background-color:rgba(174, 0, 255)"></div>-->
+    <div class="legends"></div>
+    <div class="legends"></div>
+    </div>
+</body>
+</html>

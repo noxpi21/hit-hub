@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="martin vilasero">
+    <style>
+        p{color: aqua; font-size: 30px;}
+        img{display:block;margin:auto;}
+        div{text-align: center;}
+    </style>
+</head>
+<body>
+    <div>
+         <p id="ejemplo"> No pulses el boton que dice-No pulsar-></p>
+        <img src="imagen" id="foto" width="600px"> <br>
+        <button onclick="oriana();">oriana</button>
+        <button onclick="azir();">azir</button>
+        <button onclick="kill();">kill</button>
+        <button onclick="muerte();">no pulsar</button>
+        <button onclick="partidaencontrada();">pulsar</button>
+    </div>
+    <script>
+        alert("esta pagina contiene javaScript y esta hecha en TICO.Sigue las instrucciones");
+        function oriana(){
+            document.getElementById("ejemplo").innerHTML="No pulses el boton que dice-No pulsar-" 
+            document.getElementById("ejemplo").style.color="#aqua";
+            document.getElementById("foto").src="images/oriana.jpeg"; 
+        }
+        function azir(){
+            document.getElementById("ejemplo").innerHTML="No pulses el boton que dice-No pulsar-" 
+            document.getElementById("ejemplo").style.color="#aqua";
+            document.getElementById("foto").src="images/azir.jpeg"; 
+        }
+        function kill(){
+            document.getElementById("ejemplo").innerHTML="has pulsado el boton que pedi que no pulsaras" 
+            document.getElementById("ejemplo").style.color="#aqua";
+            setTimeout(function(){document.getElementById(foto).src="images/asesinato.jpg";},2000);
+        }
+        function muerte(){
+            document.getElementById("ejemplo").innerHTML="No pulses el boton que dice-No pulsar-"; 
+            document.getElementById("ejemplo").style.color="#aqua";
+            document.getElementById("foto").src="images/muerte.jpg"; 
+        }
+        function partidaencontrada(){ 
+            document.getElementById("ejemplo").style.color="#aqua";
+            document.getElementById("foto").src="images/partidaencontrada.jpeg"; 
+        }
+    </script>
+</body>
+</html>
